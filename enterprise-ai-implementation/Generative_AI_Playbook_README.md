@@ -1,4 +1,4 @@
-# Generative AI Playbook: Enterprise Strategy to Deployment
+# Enterprise Strategy to Deployment
 
 This is an attempt to form a comprehensive guide for deploying Generative AI systems in the enterprise. This document distills strategic insights, technical frameworks, and best practices across AI architecture, model lifecycle, security, and real-world deployment techniques. Ideal for product managers, AI leads, IT strategists, and technical operators.
 
