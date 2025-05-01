@@ -10,7 +10,7 @@ This is an attempt to form a comprehensive guide for deploying Generative AI sys
 
 ### Data-First Strategy
 
-A meaningful AI or ML deployment is only as strong as the foundation it sits on — and that foundation is data. Yet organizations are often at very different stages in their data journey. A digital-native startup might already have centralized data lakes and real-time pipelines, while a legacy enterprise may still be reconciling siloed systems and manual ETL processes.
+A meaningful AI or ML deployment is only as strong as the foundation it sits on, and that foundation is data. Yet organizations are often at very different stages in their data journey. A digital-native startup might already have centralized data lakes and real-time pipelines, while a legacy enterprise may still be reconciling siloed systems and manual ETL processes.
 
 Regardless of starting point, the shift toward treating **data as a product** is critical to long-term AI success. This includes:
 
