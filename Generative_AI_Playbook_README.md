@@ -63,8 +63,8 @@ Further reading:
   - Use Amazon's Working Backwards method: define the press release, FAQs, and success criteria first.
   - Include domain SMEs early to capture nuances in data and decision-making processes.
   - Classify the problem: classification, summarization, Q&A, recommendation, generation, etc.
-  - Prioritize feasibility vs. impact using something like Google Cloud's AI Opportunity Matrix.-  
-- Model selection: Choose hosted (e.g., OpenAI) or open-source (e.g., LLaMA).
+  - Prioritize feasibility vs. impact using something like Google Cloud's AI Opportunity Matrix.  
+- Model selection: Choose hosted (e.g., OpenAI) or open-source (e.g., LLaMA)
   - Hosted LLMs (e.g., OpenAI via Azure, Anthropic via AWS, PaLM via GCP)
     - Pros: Fastest to deploy, optimized infra, strong baseline performance
     - Cons: Limited customization, potential data residency/security concerns
@@ -80,16 +80,16 @@ Further reading:
       - You want to integrate the model tightly into your stack
       - You need on-device inference, edge deployment, or custom fine-tuning
     - Tip: Use Amazon Bedrock, Azure ML Model Registry, or Vertex AI Model Garden to browse and evaluate options across providers
-- Adaptation: Use Retrieval-Augmented Generation (RAG) or prompt engineering.
-  - RAG (Retrieval-Augmented Generation): Integrate private, up-to-date data at inference time without fine-tuning.
+- Adaptation: Use Retrieval-Augmented Generation (RAG) or prompt engineering
+  - RAG (Retrieval-Augmented Generation): Integrate private, up-to-date data at inference time without fine-tuning
     - Common in all three clouds via vector databases: Amazon OpenSearch + Bedrock, Azure Cognitive Search, Google Vertex AI Search
     - Ideal for legal, policy, support, and scientific applications where ground truth is critical
     - Use embeddings + semantic search for precision
   - Prompt Engineering: Use zero-shot, few-shot, chain-of-thought, or templated prompts
     - Apply structured design patterns (e.g., ReAct, Tree-of-Thought) to break down complex tasks
     - Use tools like PromptFlow (Azure), LangChain, or Google’s PromptMaker to manage prompts systematically
-- Deployment: CI/CD pipelines with monitoring tools like MLflow or Kubeflow.
-  - Treat AI workflows like software: version everything
+- Deployment: CI/CD pipelines with monitoring tools like MLflow or Kubeflow
+  - Treat AI workflows like software: version everything (please)
   - Use CI/CD pipelines to automate model testing, prompt validation, and inference checks
   - Tools by Cloud:
     - AWS: SageMaker Pipelines + CloudWatch + Model Monitor
@@ -106,10 +106,10 @@ Further reading:
 ## 3. Retrieval-Augmented Generation (RAG)
 
 ### Concept
-- Merges internal vector search with LLMs for context-rich responses.
+- Merges internal vector search with LLMs for context-rich responses
 
 ### Use Cases
-- Internal knowledge bases, HR bots, legal summarization, help desk assistants.
+- Internal knowledge bases, HR bots, legal summarization, help desk assistants
 
 ### Benefits
 - Lower hallucinations
