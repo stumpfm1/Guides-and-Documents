@@ -21,10 +21,48 @@ Welcome to your comprehensive guide for deploying Generative AI systems in the e
 ## 2. AI Deployment Framework
 
 ### LLM Lifecycle
-- Define use case: Focus on a business-critical problem.
+- Define the Use Case: Anchor in Business Value
+  - Start with a clear, quantifiable problem (e.g., reducing customer churn, automating internal reporting).
+  - Use Amazon's Working Backwards method: define the press release, FAQs, and success criteria first.
+  - Include domain SMEs early to capture nuances in data and decision-making processes.
+  - Classify the problem: classification, summarization, Q&A, recommendation, generation, etc.
+  - Prioritize feasibility vs. impact using something like Google Cloud's AI Opportunity Matrix.-  
 - Model selection: Choose hosted (e.g., OpenAI) or open-source (e.g., LLaMA).
+  - Hosted LLMs (e.g., OpenAI via Azure, Anthropic via AWS, PaLM via GCP)
+    - Pros: Fastest to deploy, optimized infra, strong baseline performance
+    - Cons: Limited customization, potential data residency/security concerns
+    - Use hosted models if:
+      - You need time-to-value fast
+      - Your app doesn’t require deep domain-specific adaptation
+      - Your enterprise is fine with API-based solutions
+  - Open-Source Models (e.g., LLaMA, Mistral, Falcon, Gemma)
+    - Pros: Full control, on-prem/private cloud hosting, lower long-term cost
+    - Cons: Requires infra setup, fine-tuning skills, and more engineering support
+    - Use OSS if:
+      - Data privacy, compliance (HIPAA, FedRAMP) is critical
+      - You want to integrate the model tightly into your stack
+      - You need on-device inference, edge deployment, or custom fine-tuning
+    - Tip: Use Amazon Bedrock, Azure ML Model Registry, or Vertex AI Model Garden to browse and evaluate options across providers
 - Adaptation: Use Retrieval-Augmented Generation (RAG) or prompt engineering.
+  - RAG (Retrieval-Augmented Generation): Integrate private, up-to-date data at inference time without fine-tuning.
+    - Common in all three clouds via vector databases: Amazon OpenSearch + Bedrock, Azure Cognitive Search, Google Vertex AI Search
+    - Ideal for legal, policy, support, and scientific applications where ground truth is critical
+    - Use embeddings + semantic search for precision
+  - Prompt Engineering: Use zero-shot, few-shot, chain-of-thought, or templated prompts
+    - Apply structured design patterns (e.g., ReAct, Tree-of-Thought) to break down complex tasks
+    - Use tools like PromptFlow (Azure), LangChain, or Google’s PromptMaker to manage prompts systematically
 - Deployment: CI/CD pipelines with monitoring tools like MLflow or Kubeflow.
+  - Treat AI workflows like software: version everything
+  - Use CI/CD pipelines to automate model testing, prompt validation, and inference checks
+  - Tools by Cloud:
+    - AWS: SageMaker Pipelines + CloudWatch + Model Monitor
+    - Azure: ML Pipelines + Application Insights + Responsible AI dashboard
+    - GCP: Vertex AI Pipelines + Cloud Monitoring + Explainable AI tools
+  - Best Practices:
+    - Include unit tests for data prep and model inference
+    - Set up model versioning and experiment tracking with tools like MLflow, Weights & Biases, or AzureML Run History
+    - Monitor for data drift, model degradation, and cost spikes
+    - Enable rollback or traffic splitting via blue/green or shadow deployments
 
 ---
 
