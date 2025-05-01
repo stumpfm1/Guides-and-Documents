@@ -12,7 +12,7 @@ This is an attempt to form a comprehensive guide for deploying Generative AI sys
 
 A meaningful AI/ML deployment starts with data, but organizations are often at very different stages of data maturity.
 
-Some teams have robust data platforms with real-time analytics, while others are still wrangling spreadsheets and fragmented ETL (Export, Transform, Load:a process used to integrate data from various sources into a single repository, typically a data warehouse or data lake). This guide assumes varying starting points and encourages teams to adopt a **data-as-a-product** mindset, regardless of industry or maturity.
+Some teams have robust data platforms with real-time analytics, while others are still wrangling spreadsheets and fragmented ETL (Export, Transform, Load: a process used to integrate data from various sources into a single repository, typically a data warehouse or data lake). This guide assumes varying starting points and encourages teams to adopt a **data-as-a-product** mindset, regardless of industry or maturity.
 
 Key practices:
 - **Assign ownership** to data domains (data product owners)
