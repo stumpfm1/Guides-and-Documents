@@ -10,15 +10,21 @@ This is an attempt to form a comprehensive guide for deploying Generative AI sys
 
 ### Data-First Strategy
 
-A meaningful AI/ML deployment starts with data, but organizations are often at very different stages of data maturity.
+A meaningful AI or ML deployment is only as strong as the foundation it sits on — and that foundation is data. Yet organizations are often at very different stages in their data journey. A digital-native startup might already have centralized data lakes and real-time pipelines, while a legacy enterprise may still be reconciling siloed systems and manual ETL processes.
 
-Some teams have robust data platforms with real-time analytics, while others are still wrangling spreadsheets and fragmented ETL (Export, Transform, Load: a process used to integrate data from various sources into a single repository, typically a data warehouse or data lake). This guide assumes varying starting points and encourages teams to adopt a **data-as-a-product** mindset, regardless of industry or maturity.
+Regardless of starting point, the shift toward treating **data as a product** is critical to long-term AI success. This includes:
 
-Key practices:
-- **Assign ownership** to data domains (data product owners)
-- Use **data catalogs** and **lineage tracking tools** (e.g., Amundsen, Collibra, Microsoft Purview) to document, discover, and trust your data
-- Apply **governance controls** and schema validation to ensure quality and access control
-- Build **observability** into your pipelines (e.g., monitor null rates, freshness, drift)
+- **Establishing ownership**  
+  Assign product owners to data domains who are accountable for data usability, quality, and freshness.
+
+- **Enabling discoverability and access**  
+  Use data catalogs and lineage tools (e.g., *Amundsen*, *Collibra*, *Microsoft Purview*) to help teams find, trust, and understand available data.
+
+- **Enforcing data quality and governance**  
+  Define policies for schema enforcement, data validation, and role-based access — particularly vital in regulated sectors like healthcare and finance.
+
+- **Building for observability**  
+  Monitor data pipelines and quality metrics with the same rigor as application performance, enabling real-time alerts and diagnostics.
 
 Helpful frameworks:
 - [What is Data Mesh? (Martin Fowler)](https://martinfowler.com/articles/data-mesh-principles.html)
