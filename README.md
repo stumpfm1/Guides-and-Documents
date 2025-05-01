@@ -22,8 +22,7 @@ It supports technical program managers, product owners, and AI adoption teams wi
 ## Getting Started
 
 Start by exploring the `enterprise-ai-implementation/` folder, which includes:
--  An AI readiness checklist  
--  A “Data as a Product” framework  
+-  An AI readiness checklist   
 -  Generative AI playbook and references  
 -  Templates to structure your internal AI program
 
