@@ -4,13 +4,13 @@ This document provides citations, summaries, and conceptual frameworks derived f
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This document is a personal synthesis of public learning resources. All referenced materials are cited and linked to their original sources. No monetization or redistribution of original content is intended. If any organization prefers not to be included, I will promptly remove the reference.
 
 ---
 
-## 🔗 Source Overview
+## Source Overview
 
 ### 1. **MIT Technology Review – High Performance AI**
 - Citation: “Only 13% of enterprises succeed in delivering business value from ML”
@@ -46,7 +46,7 @@ This document is a personal synthesis of public learning resources. All referenc
 
 ---
 
-## 🧠 Intent of This Document
+## Intent of This Document
 
 - To consolidate and connect industry literature into a single deployment-friendly view
 - To support a learning journey that bridges business operations and technical implementation
